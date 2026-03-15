@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Wedding AR Invitation</title>
+
+<script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+
+<style>
+body {
+margin:0;
+overflow:hidden;
+}
+</style>
+
+</head>
+
+<body>
+
+<a-scene webxr="optionalFeatures: hit-test">
+
+<a-camera position="0 1.6 0"></a-camera>
+
+<a-entity
+gltf-model="wedding_scene.glb"
+scale="0.25 0.25 0.25"
+position="0 0 -1">
+</a-entity>
+
+</a-scene>
+
+</body>
+
+</html>
